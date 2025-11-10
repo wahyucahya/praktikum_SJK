@@ -109,11 +109,23 @@ GigabitEthernet0/0     10.10.10.1      YES manual up                    up
 GigabitEthernet0/1     192.168.10.1    YES manual up                    up
 ```
 
+⚠️ **PENTING:** Status Gi0/0 harus **`up up`** (bukan `up down`)
+- **up down** = Kabel belum terhubung atau salah port!
+- **up up** = Koneksi berfungsi dengan baik ✅
+
 **Routing Table harus ada:**
 ```
 C    10.10.10.0/30 is directly connected, GigabitEthernet0/0
 C    192.168.10.0/24 is directly connected, GigabitEthernet0/1
 S    192.168.20.0/24 [1/0] via 10.10.10.2
+```
+
+**Jika Routing Table belum lengkap, tambahkan:**
+```cisco
+configure terminal
+ip route 192.168.20.0 255.255.255.0 10.10.10.2
+exit
+write memory
 ```
 
 ---
