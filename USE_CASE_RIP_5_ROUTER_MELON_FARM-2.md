@@ -637,7 +637,7 @@ enable
 configure terminal
 
 ! ========================================
-! ROUTER 1 - ZONA UTARA (FIELD NORTH)
+! ROUTER 1 - ZONA 1 (LAHAN 1)
 ! Network: 192.168.1.0/24
 ! ========================================
 
@@ -704,7 +704,7 @@ exit
 ! Banner
 banner motd #
 ================================================
-  ROUTER 1 - ZONA UTARA (FIELD NORTH)
+  ROUTER 1 - ZONA 1 (LAHAN 1)
   Kebun Melon XYZ - 2 Hektar
   Network: 192.168.1.0/24
   Unauthorized access is PROHIBITED!
@@ -729,7 +729,7 @@ enable
 configure terminal
 
 ! ========================================
-! ROUTER 2 - ZONA TENGAH (FIELD CENTER)
+! ROUTER 2 - ZONA 2 (LAHAN 2)
 ! Network: 192.168.2.0/24
 ! ========================================
 
@@ -796,7 +796,7 @@ exit
 ! Banner
 banner motd #
 ================================================
-  ROUTER 2 - ZONA TENGAH (FIELD CENTER)
+  ROUTER 2 - ZONA 2 (LAHAN 2)
   Kebun Melon XYZ - 1.5 Hektar
   Network: 192.168.2.0/24
   Unauthorized access is PROHIBITED!
@@ -814,14 +814,14 @@ write memory
 
 ---
 
-### 🟠 **ROUTER 3 (Field South - Zona Selatan)**
+### 🟠 **ROUTER 3 (LAHAN 3 - Zona 3)**
 
 ```cisco
 enable
 configure terminal
 
 ! ========================================
-! ROUTER 3 - ZONA SELATAN (FIELD SOUTH)
+! ROUTER 3 - ZONA 3 (LAHAN 3)
 ! Network: 192.168.3.0/24
 ! ========================================
 
@@ -888,7 +888,7 @@ exit
 ! Banner
 banner motd #
 ================================================
-  ROUTER 3 - ZONA SELATAN (FIELD SOUTH)
+  ROUTER 3 - ZONA 3 (LAHAN 3)
   Kebun Melon XYZ - 1.5 Hektar
   Network: 192.168.3.0/24
   Unauthorized access is PROHIBITED!
