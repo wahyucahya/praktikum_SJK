@@ -674,9 +674,9 @@ exit
 ip dhcp pool ZONA1-FIELD-NORTH
  network 192.168.1.0 255.255.255.0
  default-router 192.168.1.1
- dns-server 8.8.8.8 8.8.4.4
+ dns-server 8.8.8.8
+ dns-server 8.8.4.4
  domain-name melon-farm.local
- lease 7
 exit
 
 ! Exclude static IP range
@@ -698,7 +698,7 @@ exit
 line vty 0 4
  password vty123
  login
- transport input ssh telnet
+ transport input all
 exit
 
 ! Banner
@@ -766,9 +766,9 @@ exit
 ip dhcp pool ZONA2-FIELD-CENTER
  network 192.168.2.0 255.255.255.0
  default-router 192.168.2.1
- dns-server 8.8.8.8 8.8.4.4
+ dns-server 8.8.8.8
+ dns-server 8.8.4.4
  domain-name melon-farm.local
- lease 7
 exit
 
 ! Exclude static IP range
@@ -790,7 +790,7 @@ exit
 line vty 0 4
  password vty123
  login
- transport input ssh telnet
+ transport input all
 exit
 
 ! Banner
@@ -858,9 +858,9 @@ exit
 ip dhcp pool ZONA3-FIELD-SOUTH
  network 192.168.3.0 255.255.255.0
  default-router 192.168.3.1
- dns-server 8.8.8.8 8.8.4.4
+ dns-server 8.8.8.8
+ dns-server 8.8.4.4
  domain-name melon-farm.local
- lease 7
 exit
 
 ! Exclude static IP range
@@ -882,7 +882,7 @@ exit
 line vty 0 4
  password vty123
  login
- transport input ssh telnet
+ transport input all
 exit
 
 ! Banner
@@ -974,9 +974,9 @@ exit
 ip dhcp pool OFFICE-NETWORK
  network 192.168.4.0 255.255.255.0
  default-router 192.168.4.1
- dns-server 8.8.8.8 8.8.4.4
+ dns-server 8.8.8.8
+ dns-server 8.8.4.4
  domain-name melon-farm.local
- lease 7
 exit
 
 ! Exclude static IP range
@@ -1159,9 +1159,9 @@ ip nat inside source list 1 interface GigabitEthernet 0/2 overload
 ip dhcp pool DMZ-EDGE-NETWORK
  network 192.168.5.0 255.255.255.0
  default-router 192.168.5.1
- dns-server 8.8.8.8 1.1.1.1
+ dns-server 8.8.8.8
+ dns-server 1.1.1.1
  domain-name edge.melon-farm.local
- lease 3
 exit
 
 ! Exclude static IP range
