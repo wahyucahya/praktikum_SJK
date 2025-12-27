@@ -713,7 +713,7 @@ banner motd #
 
 ! Logging
 logging buffered 4096
-logging console warnings
+no logging console
 
 ! Save configuration
 end
@@ -805,7 +805,7 @@ banner motd #
 
 ! Logging
 logging buffered 4096
-logging console warnings
+no logging console
 
 ! Save configuration
 end
@@ -897,7 +897,7 @@ banner motd #
 
 ! Logging
 logging buffered 4096
-logging console warnings
+no logging console
 
 ! Save configuration
 end
